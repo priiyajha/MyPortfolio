@@ -3,6 +3,15 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Health check endpoint for keep-alive service
+  app.get("/api/health", (req, res) => {
+    res.status(200).json({
+      status: "ok",
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime()
+    });
+  });
+
   // Get all projects
   app.get("/api/projects", async (req, res) => {
     try {
@@ -68,12 +77,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (!profile || !profile.resumeUrl) {
         return res.status(404).json({ message: "Resume not found" });
       }
-      
+
       // In a real application, you would serve the actual file
       // For now, we'll redirect to a placeholder
-      res.json({ 
-        message: "Resume download initiated", 
-        url: profile.resumeUrl 
+      res.json({
+        message: "Resume download initiated",
+        url: profile.resumeUrl
       });
     } catch (error) {
       res.status(500).json({ message: "Failed to download resume" });
