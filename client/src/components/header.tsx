@@ -39,17 +39,12 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Left Navigation - Always visible */}
             <nav className="flex items-center space-x-4 sm:space-x-6 md:space-x-8">
-              <div 
-                className="font-bold tracking-tight leading-none" 
-                style={{ 
-                  fontFamily: 'Bebas Neue, Arial Black, sans-serif',
-                  fontSize: 'clamp(1.2rem, 3vw, 2.5rem)',
-                  fontWeight: '900',
-                  color: '#E50914',
-                  letterSpacing: '-0.02em'
-                }}
-              >
-                InBetaByPriya
+              <div className="h-[clamp(1.2rem,3vw,2.5rem)]">
+                <img
+                    src="attached_assets/inbetabypriya.png"
+                    alt="InBetaByPriya"
+                    className="h-full w-auto object-contain"
+                />
               </div>
               <ul className="flex space-x-3 sm:space-x-4 md:space-x-6">
                 <li>
