@@ -45,8 +45,8 @@ export default function Home() {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <a href="tel:+919610373967" className="text-xs sm:text-sm">
-                    +91 - 9610373967
+                  <a href="tel:+91961xxxxxxx" className="text-xs sm:text-sm">
+                    +91 - 961xxxxxxx
                   </a>
                 </div>
               </div>

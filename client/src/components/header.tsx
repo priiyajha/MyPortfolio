@@ -83,14 +83,20 @@ export default function Header() {
                 </button>
                 <div className="relative">
                   <button className="flex items-center space-x-2 p-2 hover:bg-white/10 rounded transition-all duration-200">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded"></div>
+                    {/*<div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded"></div>*/}
+
+                    <div><img
+                        src="attached_assets/priyaj.jpeg"
+                        alt="Priya Jha"
+                        className="w-10 h-10 rounded object-cover"
+                    /></div>
                     <ChevronDown className="w-4 h-4" />
                   </button>
                 </div>
               </div>
-              
+
               {/* Mobile Hamburger Menu */}
-              <button 
+              <button
                 className="md:hidden p-2 hover:bg-white/10 rounded transition-all duration-200"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
@@ -128,8 +134,14 @@ export default function Header() {
                   <button className="p-3 hover:bg-white/10 rounded transition-all duration-200">
                     <Bell className="w-6 h-6" />
                   </button>
+                  {/*<div className="flex items-center space-x-2">*/}
+                  {/*  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded"></div>*/}
                   <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded"></div>
+                    <img
+                        src="attached_assets/priyaj.jpeg" // or import and use {myImage}
+                        alt="PriyaJha"
+                        className="w-10 h-10 rounded object-cover"
+                    />
                     <ChevronDown className="w-5 h-5" />
                   </div>
                 </div>
@@ -141,3 +153,4 @@ export default function Header() {
     </>
   );
 }
+

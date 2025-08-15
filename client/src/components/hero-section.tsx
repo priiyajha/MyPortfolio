@@ -16,7 +16,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
     try {
       const response = await fetch("/api/download-resume");
       const data = await response.json();
-      
+
       if (response.ok) {
         toast({
           title: "Resume Download",
@@ -35,12 +35,17 @@ export default function HeroSection({ profile }: HeroSectionProps) {
     }
   };
 
-  const scrollToProjects = () => {
+
+
+  const navigateToProjects = () => {
     const element = document.getElementById("projects");
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+
+
 
   return (
     <section id="home" className="relative h-screen flex items-end overflow-hidden">
@@ -55,7 +60,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
         >
           <source src={backgroundVideo} type="video/mp4" />
           {/* Fallback background image if video fails to load */}
-          <div 
+          <div
             className="w-full h-full bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
@@ -82,7 +87,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
           >
             Priya Jha
           </motion.h1>
-          
+
           <motion.h2
             className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-white drop-shadow-lg"
             initial={{ opacity: 0, x: -50 }}
@@ -91,7 +96,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
           >
             Full-Stack & Vibe Coding | Marketing
           </motion.h2>
-          
+
           <motion.p
             className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl drop-shadow-md leading-relaxed"
             initial={{ opacity: 0, x: -50 }}
@@ -100,7 +105,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
           >
             {profile?.bio || "Creating modern web applications with cutting-edge technologies. Passionate about user experience and scalable solutions."}
           </motion.p>
-          
+
           <motion.div
             className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             initial={{ opacity: 0, y: 30 }}
@@ -108,14 +113,14 @@ export default function HeroSection({ profile }: HeroSectionProps) {
             transition={{ duration: 0.8, delay: 1.1 }}
           >
             <Button
-              onClick={scrollToProjects}
+              onClick={navigateToProjects}
               className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-base sm:text-lg hover:bg-netflix-light-gray transition-colors duration-200 flex items-center justify-center gap-2"
               size="lg"
             >
               <Play className="w-4 h-4 sm:w-5 sm:h-5" />
               View Projects
             </Button>
-            
+
             <Button
                 onClick={() => window.open("attached_assets/Resume_PriyaJha_AI.pdf", "_blank")}
               variant="secondary"
