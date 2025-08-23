@@ -57,9 +57,15 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
   const getThumbnailPath = (projectId: string, title: string): string => {
     const thumbnailMap: Record<string, string> = {
       "1": "/attached_assets/trip-planner.png", // Trip Planner
-      "2": "/attached_assets/netflixinsp.jpeg", // Netflix Inspired Portfolio
-      "3": "/attached_assets/farmfolio.jpeg", // FarmFolio
-      "4": "/attached_assets/AiP.jpeg", // AI Interview Platform
+      "2": "/attached_assets/farmfolio.jpeg", // Netflix Inspired Portfolio
+      "3": "/attached_assets/netflixinsp.jpeg", // FarmFolio
+      "4": "/attached_assets/AiP.jpeg",// AI Interview Platform
+      "5":"`" ,//
+      "6":"",//
+      "7":"",//
+      "8":"",//
+      "9":"",//
+      "10":"",//
     };
 
     const basePath = thumbnailMap[projectId] || "/default-thumbnail.jpg";
@@ -73,7 +79,13 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
       "1": "2",
       "2": "3",
       "3": "4",
-      "4": "1"
+      "4": "1",
+      "5":"6",
+      "6": "7",
+      "7": "8",
+      "8": "9",
+      "9": "10",
+      "10": "4",
     };
 
     return featuredProjects
@@ -453,34 +465,55 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                           ? "Full-Stack"
                                           : project.title === "Netflix Inspired Portfolio"
                                               ? "Full-Stack + Vibe Coding"
-                                              : "Web Application"}
+
+                                              : project.title === "Real Time Multi Object Detection"
+                                              ? "Web-app"
+                                              : project.title === "Omniplex"
+                                              ? "Web-app"
+                                              : project.title === "NextRip"
+                                              ? "Web-app"
+                                              : "Web Application"
+                              }
                           </span>
                           </div>
                           {/* Main Title */}
-                          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8 leading-tight">
+                          <h2 className="text md:text-xl font-text text-white mb-8 leading-tight bg-netflix-dark ">
                             { project.title === "FarmFolio"
-                                ? "The Crop Code"
+                                ? "Problem Statement: Farmers often struggle to choose the most suitable crops for their land due to varying geography, soil types, budgets, and cultivation goals. Additionally, they face challenges in managing crop health, addressing soil fertility issues, and accessing timely weather or market updates. Language barriers and lack of personalized guidance further complicate decision-making."
                                 : project.title === "Trip Planner"
-                                    ? "The Ultimate Travelverse"
-                                    : project.title === "AI Interview Platform"
-                                        ? "Interviewed"
+                                    ? "Problem Statement: Planning a trip is often fragmented, time-consuming, and stressful for both solo travelers and groups. Users must navigate multiple platforms to discover destinations, explore travel categories (like adventure, leisure, or budget), check real-time weather, find transport options, get personalized recommendations, and coordinate plans with others. This scattered process leads to inefficiency, confusion, and limited personalization, making travel planning cumbersome."
+                                      : project.title === "AI Interview Platform"
+                                        ? "Problem Statement: Traditional technical interviews are time-consuming, inconsistent, and prone to human bias. Companies struggle to evaluate candidates efficiently, while candidates receive limited, non-personalized feedback, making the hiring process slow and opaque."
                                         : project.title === "Netflix Inspired Portfolio"
-                                            ? "Portfolio Originals"
+                                            ? "Problem Statement: Many student portfolios are static or uninspired, and while Netflix-style clones are common, limited API access often makes them non-interactive and UI/UX unfriendly. Students struggle to create engaging, original showcases of their work without relying on copyrighted content or external dependencies."
+                                              : project.title === "Real Time Multi Object Detection"
+                                              ? "Problem Statement: Real-time object detection and streaming are usually limited to specialized hardware or complex setups, making AI-powered video processing inaccessible for everyday users. People lack an easy way to experience fast, interactive, and intelligent video streaming on their smartphones."
+                                            : project.title === "Omniplex"
+                                            ? "Problem Statement: Developers lack a unified platform to experiment, collaborate, and innovate in real time. Existing tools are fragmented, slow, and don’t support seamless multi-LLM interactions, plugin expansions, or interactive experimentation."
+                                            : project.title === "NextRip"
+                                            ? "Problem Statement: Building a functional e-commerce platform is challenging for both learners and enthusiasts. Integrating frontend, backend, and payment systems into a seamless, real-world application that handles live transactions is often complex and fragmented."
                                             : "Complex processes now run seamlessly."
                             }
                           </h2>
 
                           {/* Detailed Description */}
-                          <p className="text-gray-300 text-base leading-relaxed">
+                          <p className="text-gray-100 md:text-l text-base leading-relaxed">
                             {project.title === "FarmFolio"
-                                ? "Farmfolio is an intelligent crop recommendation system that personalizes suggestions based on user inputs like geography, soil type, budget, area, and cultivation goals. Trained on curated datasets, it not only identifies the most suitable crops but also offers issue-specific fertilizer recommendations (e.g., for pests or soil fertility). The app integrates real-time weather and news updates through an interactive chatbot, enhanced with a personality agent to keep conversations engaging and a translator agent that uses NLP to detect and respond in the user's native language, even when typed phonetically in English. Built to unify diverse farming needs in one accessible platform."
+                                ?
+                                "Proposed Solution:Farmfolio is an intelligent crop recommendation system that personalizes crop suggestions based on user inputs like geography, soil type, budget, area, and cultivation goals. It provides targeted fertilizer recommendations for specific issues, integrates real-time weather and news updates, and offers an interactive chatbot with a personality agent for engaging guidance. A translator agent uses NLP to respond in the user’s native language, even when typed phonetically in English, creating a unified, accessible platform for informed farming decisions."
                                 : project.title === "Trip Planner"
-                                    ? "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard."
+                                    ? "Proposed Solution: Trip Planner is a unified, smart web platform that simplifies travel planning for individuals and groups. It consolidates destination discovery, category-based exploration, personalized recommendations, real-time weather updates, transport options, and collaborative itinerary management—all in one interactive experience. Users can explore cities by category or season, manage bookings, and plan trips seamlessly, while admins maintain full control over content and gain actionable insights through a dedicated dashboard."
                                     : project.title === "AI Interview Platform"
-                                        ? "An intelligent interview platform that conducts automated technical and behavioral interviews using advanced AI. Features real-time code evaluation, sentiment analysis, and detailed candidate assessments with personalized feedback."
+                                        ? "Proposed Solution: Interviewed is an AI-powered platform that automates technical interviews with real-time code evaluation and behavioral analysis. It provides detailed, personalized feedback for candidates while ensuring faster, consistent, and unbiased assessments for recruiters, making the entire process interactive and efficient."
                                         : project.title === "Netflix Inspired Portfolio"
-                                            ? "Step into a portfolio experience designed like your favorite streaming platform. Browse projects seamlessly in categorized rows, hover for instant previews, and dive into detailed project trailers showing tech stacks, live demos, and GitHub links."
-                                            : "Complex processes now run seamlessly."
+                                            ? "Proposed Solution: Portfolio Originals draws inspiration from Netflix’s interface but presents a fully original, personalized portfolio experience. Users can showcase their own projects, live demos, and generated media in an interactive, visually appealing format. Projects are organized in categorized rows with hover previews, trailers, and links to demos and GitHub, creating an immersive experience that’s both unique and professional."
+                                            : project.title === "Real Time Multi Object Detection"
+                                                ? "Proposed Solution: Edge Vision turns any smartphone into an AI-powered streaming device. It detects multiple objects in real time with bounding boxes on every frame, allowing users to switch between lightweight WASM mode or high-performance Server mode. With QR pairing, network tunnels, and live performance benchmarks, it delivers a fast, interactive, and engaging edge AI streaming experience directly in the browser."
+                                                : project.title === "Omniplex"
+                                                    ? "Proposed Solution: Openpanel is a dynamic web ecosystem built for developers to explore, experiment, and collaborate. Powered by OpenAI and built with Next.js, React, Redux, Tailwind, and Firebase, it offers real-time updates, multi-LLM interactions, plugin support, and an interactive playground-combining search, weather, stocks, and more into a single living platform for creativity and innovation."
+                                                    : project.title === "NextRip"
+                                                        ? "Proposed Solution: Checkout is a full-stack e-commerce demo built on Next.js with Stripe-powered payments. It offers a polished landing page guiding users through seamless transactions, automatically redirecting after each purchase. The project demonstrates the complete journey from localhost to production, teaching developers and users how to combine frontend finesse, backend logic, and secure payments to create a live, functional commerce application."
+                                                        : "Complex processes now run seamlessly."
                             }
                               </p>
                             </div>
@@ -568,82 +601,82 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                       </div>
 
                   {/* More Like This Section */}
-                  <div className="mt-12">
-                    <h3 className="text-white text-xl font-semibold mb-6">
-                      More Like This
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {moreLikeThisProjects.map((similarProject) => (
-                          <div
-                              key={`${similarProject.id}-${modalKey}`}
-                              className="bg-[#2F2F2F] rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-200 group relative"
-                              onClick={() => {
-                                // First scroll to the video section to highlight the background video
-                                const videoSection = document.querySelector('.video-header-section');
-                                if (videoSection) {
-                                  videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                }
-                                // Then switch to the new project after a brief delay
-                                setTimeout(() => {
-                                  handleProjectClick(similarProject.id);
-                                }, 500);
-                              }}
-                          >
-                            {/* Video hover preview */}
-                            {similarProject.video && (
-                                <video
-                                    src={similarProject.video}
-                                    className="absolute inset-0 w-full h-32 object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    preload="none"
+                  {/*<div className="mt-12">*/}
+                  {/*  <h3 className="text-white text-xl font-semibold mb-6">*/}
+                  {/*    More Like This*/}
+                  {/*  </h3>*/}
+                  {/*  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">*/}
+                  {/*    {moreLikeThisProjects.map((similarProject) => (*/}
+                  {/*        <div*/}
+                  {/*            key={`${similarProject.id}-${modalKey}`}*/}
+                  {/*            className="bg-[#2F2F2F] rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-200 group relative"*/}
+                  {/*            onClick={() => {*/}
+                  {/*              // First scroll to the video section to highlight the background video*/}
+                  {/*              const videoSection = document.querySelector('.video-header-section');*/}
+                  {/*              if (videoSection) {*/}
+                  {/*                videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });*/}
+                  {/*              }*/}
+                  {/*              // Then switch to the new project after a brief delay*/}
+                  {/*              setTimeout(() => {*/}
+                  {/*                handleProjectClick(similarProject.id);*/}
+                  {/*              }, 500);*/}
+                  {/*            }}*/}
+                  {/*        >*/}
+                  {/*          /!* Video hover preview *!/*/}
+                  {/*          {similarProject.video && (*/}
+                  {/*              <video*/}
+                  {/*                  src={similarProject.video}*/}
+                  {/*                  className="absolute inset-0 w-full h-32 object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"*/}
+                  {/*                  autoPlay*/}
+                  {/*                  loop*/}
+                  {/*                  muted*/}
+                  {/*                  playsInline*/}
+                  {/*                  preload="none"*/}
 
-                                    style={{
-                                      aspectRatio: '16/9',
-                                      objectFit: 'cover'
-                                                  }}
-                                    onError={(e) => {
-                                      console.warn('Failed to load similar project video:', similarProject.video);
-                                    }}
-                                />
-                            )}
-                            <img
-                                src={getThumbnailPath(similarProject.id, similarProject.title)}
-                                alt={similarProject.title}
-                                loading="lazy"
-                                decoding="async"
-                                fetchPriority="low"
-                                className="w-full h-32 object-cover group-hover:opacity-0 transition-opacity duration-300"
-                                style={{
-                                  aspectRatio: '16/9',
-                                  objectFit: 'cover'
-                                }}
-                                onError={(e) => {
-                                  console.warn('Failed to load similar project thumbnail:', getThumbnailPath(similarProject.id, similarProject.title));
-                                  e.currentTarget.src = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=450";
-                                }}
-                            />
-                            <div className="p-4">
-                              <div className="flex justify-between items-start mb-2">
-                                <h4 className="text-white font-semibold text-sm line-clamp-1">
-                                  {similarProject.title}
-                                </h4>
-                                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-                                  <Plus className="w-5 h-5 text-white border border-white rounded-full p-1" />
-                                </div>
-                              </div>
-                              <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">
-                              </div>
-                              <p className="text-gray-300 text-xs line-clamp-2">
-                                {similarProject.description.substring(0, 100)}...
-                              </p>
-                            </div>
-                          </div>
-                      ))}
-                    </div>
-                  </div>
+                  {/*                  style={{*/}
+                  {/*                    aspectRatio: '16/9',*/}
+                  {/*                    objectFit: 'cover'*/}
+                  {/*                                }}*/}
+                  {/*                  onError={(e) => {*/}
+                  {/*                    console.warn('Failed to load similar project video:', similarProject.video);*/}
+                  {/*                  }}*/}
+                  {/*              />*/}
+                  {/*          )}*/}
+                  {/*          <img*/}
+                  {/*              src={getThumbnailPath(similarProject.id, similarProject.title)}*/}
+                  {/*              alt={similarProject.title}*/}
+                  {/*              loading="lazy"*/}
+                  {/*              decoding="async"*/}
+                  {/*              fetchPriority="low"*/}
+                  {/*              className="w-full h-32 object-cover group-hover:opacity-0 transition-opacity duration-300"*/}
+                  {/*              style={{*/}
+                  {/*                aspectRatio: '16/9',*/}
+                  {/*                objectFit: 'cover'*/}
+                  {/*              }}*/}
+                  {/*              onError={(e) => {*/}
+                  {/*                console.warn('Failed to load similar project thumbnail:', getThumbnailPath(similarProject.id, similarProject.title));*/}
+                  {/*                e.currentTarget.src = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=450";*/}
+                  {/*              }}*/}
+                  {/*          />*/}
+                  {/*          <div className="p-4">*/}
+                  {/*            <div className="flex justify-between items-start mb-2">*/}
+                  {/*              <h4 className="text-white font-semibold text-sm line-clamp-1">*/}
+                  {/*                {similarProject.title}*/}
+                  {/*              </h4>*/}
+                  {/*              <div className="opacity-0 group-hover:opacity-100 transition-opacity">*/}
+                  {/*                <Plus className="w-5 h-5 text-white border border-white rounded-full p-1" />*/}
+                  {/*              </div>*/}
+                  {/*            </div>*/}
+                  {/*            <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">*/}
+                  {/*            </div>*/}
+                  {/*            <p className="text-gray-300 text-xs line-clamp-2">*/}
+                  {/*              {similarProject.description.substring(0, 100)}...*/}
+                  {/*            </p>*/}
+                  {/*          </div>*/}
+                  {/*        </div>*/}
+                  {/*    ))}*/}
+                  {/*  </div>*/}
+                  {/*</div>*/}
                   </div>
                 </>
             ) : (

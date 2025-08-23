@@ -3,7 +3,7 @@ import Header from "../components/header";
 import HeroSection from "../components/hero-section";
 import ProjectsSection from "../components/projects-section";
 import ProjectModal from "../components/project-modal";
-import { Profile } from "../../../shared/schema";
+import { Profile } from "@shared/schema.ts";
 import { useState } from "react";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 

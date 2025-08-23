@@ -23,7 +23,7 @@ export class MemStorage implements IStorage {
   private initializeData() {
     // Initialize with sample portfolio data (only 2 real projects per category)
     const sampleProjects: Project[] = [
-      // Featured Projects - Keep only 2 real ones
+        //featured
       {
         id: "1",
         title: "Trip Planner",
@@ -47,40 +47,39 @@ export class MemStorage implements IStorage {
           "Admin dashboard with content and analytics control"
         ]
       },
-      {
-        id: "2",
-        title: "AI Interview Platform",
-        description: "An intelligent interview platform that conducts automated technical and behavioral interviews using advanced AI. Features real-time code evaluation, sentiment analysis, and detailed candidate assessments with personalized feedback.",
-        image: "attached_assets/AiP.jpeg",
-        video: "attached_assets/AI-Interview.mp4",
-        technologies: ["Next.js", "Node.js & Express", "MongoDB", "Vapi", "Firebase"],
-        category: "featured",
-        liveUrl: "",
-        githubUrl: "https://github.com/priiyajha/AI-Interview-Platform.git",
-        featured: "true",
-        status: "coming-soon",
-        features: [
-          "Real-time code evaluation and syntax checking",
-          "AI-powered sentiment analysis during interviews",
-          "Automated technical question generation",
-          "Detailed candidate assessment reports",
-          "Behavioral interview simulation",
-          "Performance analytics and insights",
-          "Integration with popular coding platforms",
-          "Customizable interview templates"
-        ]
-      },
+      // {
+      //   id: "2",
+      //   title: "Netflix Inspired Portfolio",
+      //   description: "Step into a portfolio experience designed like your favorite streaming platform. Browse projects seamlessly in categorized rows, hover for instant previews, and dive into detailed project trailers showing tech stacks, live demos, and GitHub links.",
+      //   image: "attached_assets/netflixinsp.jpeg",
+      //   video: "attached_assets/Netflixinsp_v.mov",
+      //   technologies: ["React.js", "Next.js", "Node.js & Express", "Postgresql", "Vibe Coding"],
+      //   category: "featured",
+      //   liveUrl: "https://netflixinspiredportfolio.onrender.com/",
+      //   githubUrl: "https://github.com/priiyajha/NetflixInspiredPortfolio.git",
+      //   featured: "true",
+      //   status: "live",
+      //   features: [
+      //     "Categorized Project Rows",
+      //     "Hover Previews: Get instant sneak peeks of each project on hover.",
+      //     "Project Trailers: Watch detailed mini-demos for each project with tech stack and live previews.",
+      //     "Interactive UI: Smooth animations and cinematic scrolling for a binge-worthy experience.",
+      //     "Responsive Design: Optimized for all devices with pixel-perfect layout and Netflix-inspired aesthetic.",
+      //     "Dynamic Content Loading: Fetch projects in real-time using React Query for seamless performance.",
+      //     "High Customizability: Easily add or update projects without breaking the layout."
+      //   ]
+      // },
 
       // Web Development
       {
-        id: "2",
+        id: "6",
         title: "AI Interview Platform",
         description: "An intelligent interview platform that conducts automated technical and behavioral interviews using advanced AI. Features real-time code evaluation, sentiment analysis, and detailed candidate assessments with personalized feedback.",
-        image: "attached_assets/AiP.jpeg",
+        image: "attached_assets/aip.jpeg",
         video: "attached_assets/AI-Interview.mp4",
         technologies: ["Next.js", "Node.js & Express", "MongoDB", "Vapi", "Firebase"],
         category: "web",
-        liveUrl: "",
+        liveUrl: "#",
         githubUrl: "https://github.com/priiyajha/AI-Interview-Platform.git",
         featured: "false",
         status: "coming-soon",
@@ -119,7 +118,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "3",
+        id: "4",
         title: "Netflix Inspired Portfolio",
         description: "Step into a portfolio experience designed like your favorite streaming platform. Browse projects seamlessly in categorized rows, hover for instant previews, and dive into detailed project trailers showing tech stacks, live demos, and GitHub links.",
         image: "attached_assets/netflixinsp.jpeg",
@@ -141,7 +140,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "6",
+        id: "3",
         title: "Trip Planner",
         description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
         image: "/attached_assets/trip-planner.png",
@@ -163,6 +162,90 @@ export class MemStorage implements IStorage {
           "Admin dashboard with content and analytics control"
         ]
       },
+      //gen ai projects
+      // {
+      //   id: "7",
+      //   title: "Muti Channel Sales Agent",
+      //   description: "",
+      //   image: "",
+      //   video: "",
+      //   technologies: ["React.js", "Next.js", "Node.js & Express", "Postgresql", "Vibe Coding"],
+      //   category: "genai",
+      //   liveUrl: "#",
+      //   githubUrl: "",
+      //   featured: "false",
+      //   status: "ongoing",
+      //   features: [
+      //     // "Categorized Project Rows",
+      //     // "Hover Previews: Get instant sneak peeks of each project on hover.",
+      //     // "Project Trailers: Watch detailed mini-demos for each project with tech stack and live previews.",
+      //     // "Interactive UI: Smooth animations and cinematic scrolling for a binge-worthy experience.",
+      //     // "Responsive Design: Optimized for all devices with pixel-perfect layout and Netflix-inspired aesthetic.",
+      //     // "Dynamic Content Loading: Fetch projects in real-time using React Query for seamless performance.",
+      //     // "High Customizability: Easily add or update projects without breaking the layout."
+      //   ]
+      // },
+      {
+        id: "8",
+        title: "Omniplex",
+        description: "An experimental leap into Next.js’ new frontier, where AI, Firebase, and raw innovation collide to shape an evolving digital ecosystem.",
+        image: "attached_assets/omnipleximg.jpeg",
+        video: "attached_assets/omniplex_v.mp4",
+        technologies: ["Typescript", "CSS", "Javascript"],
+        category: "genai",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/omniplex-carbon.git",
+        featured: "false",
+        status: "live",
+        features: [
+          "A bold experiment unfolds as developers transition from the old to the new, leaving behind the comfort of pages for the uncharted territory of Next.js’ app directory.",
+          "With Firebase as the beating heart, OpenAI as the mind, and a vision powered by search, weather, stocks, and more, this project isn’t just code, it’s an evolving ecosystem.",
+          "Expect bugs, breakthroughs, and a roadmap filled with ambitious quests: from multi-LLM battles to plugin expansions.",
+          "Built with React, Redux, and Tailwind flair, Openpanel is where community, creativity, and raw experimentation collide."
+        ]
+      },
+      //learning projects
+      {
+        id: "7",
+        title: "Real Time Multi Object Detection",
+        description: "Turn your phone into a live AI lens, streaming, detecting, and sketching objects in real time, right in your browser.",
+        image: "attached_assets/realtime.jpeg",
+        video: "attached_assets/werbrtc_v.mp4",
+        technologies: ["Python", "Docker", "Html"],
+        category: "other",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/real-time-multi-object-detection.git",
+        featured: "false",
+        status: "live",
+        features: [
+          "A phone camera becomes the eye, the browser its canvas, and AI the mind pulling the strings.",
+          "This demo streams live video from your pocket straight to your laptop, detecting multiple objects in real time and sketching bounding boxes that dance with every frame.",
+          "Choose your mode: wasm for low-resource survival, server for heavy-duty inference.",
+          "QR codes unlock the gateway, benchmarks expose the latency battles, and tunnels keep the stream alive across networks.",
+          "This isn’t just code, it’s a front-row seat to the future of edge AI streaming. Fast, raw, and unforgiving.",
+          "Stream the unseen. Detect the unexpected."
+        ]
+      },
+      {
+        id: "9",
+        title: "NextRip",
+        description: "From code to currency, a seamless Next.js and Stripe journey where every payment unlocks the next act.”",
+        image: "attached_assets/nextrip.jpeg",
+        video: "attached_assets/nextrip_v.mp4",
+        technologies: ["Typescript", "Javascript", "CSS"],
+        category: "other",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/next-rip.git",
+        featured: "false",
+        status: "live",
+        features: [
+          "A landing page sets the stage.",
+          "A payment gateway takes the leap. And with every successful transaction, users are seamlessly redirected into the next act.",
+          "Built on Next.js, styled with Vercel’s precision, and armed with Stripe’s secure payments, this project isn’t just a tutorial, it’s a coming-of-age story for web developers learning to blend frontend flair with real-world commerce.",
+          "From localhost to live payments — watch code turn into currency."
+          ]
+      },
+
     ];
 
     sampleProjects.forEach(project => {
@@ -177,18 +260,18 @@ export class MemStorage implements IStorage {
       bio: "Priya codes like she's curating a vibe, part full-stack dev, part automation whisperer, part marketing nerd. With the MERN stack at her fingertips and GenAI in her toolkit, she turns messy workflows into seamless systems. Beyond code, she leads with clarity, from TEDx stages to NSS teams, blending tech, voice, and vision. Quick to learn, faster to build, and always rewriting the rules, in beta, by choice.",
       mission: "Transforming complex workflows into elegant solutions through the perfect blend of technology, automation, and strategic thinking.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-      email: "contact@portfolio.com",
-      phone: "+1 (234) 567-8900",
-      location: "San Francisco, CA",
-      resumeUrl: "/resume.pdf",
+      email: "jhapriiyaa2104@gmail.com",
+      phone: "+91 961xxxxxxx",
+      location: "India",
+      resumeUrl: "attached_assets/Resume_Priya_Jha_AI.pdf",
       skills: {
         frontend: ["React.js", "Vue.js", "TypeScript", "Tailwind CSS"],
         backend: ["Node.js", "Python", "PostgreSQL", "AWS"]
       },
       social: {
-        linkedin: "https://linkedin.com/in/example",
-        github: "https://github.com/example",
-        twitter: "https://twitter.com/example"
+        linkedin: "linkedin.com/in/priiyajhaa",
+        github: "https://github.com/priiyajha",
+        twitter: "https://x.com/priya_jha1488"
       }
     };
   }
