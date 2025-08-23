@@ -57,9 +57,9 @@ export default function Home() {
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6">Services</h3>
               <div className="space-y-3">
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Web Development</div>
-                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Vibe Coding</div>
-                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Vibe Marketing</div>
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Gen AI</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">AI Automation</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Vibe Coding+Marketing</div>
               </div>
             </div>
 
@@ -68,10 +68,15 @@ export default function Home() {
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6">Technologies</h3>
               <div className="space-y-3">
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">HTML/CSS</div>
-                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">JavaScript</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Javascript & Typescript</div>
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">React & Next.js</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">TailwindCSS</div>
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Node.js & Express</div>
                 <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">MongoDB & PostgreSQL</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Prompt Engineering</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">RAG</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">Agentic AI</div>
+                <div className="text-gray-300 text-xs sm:text-sm hover:text-white transition-colors cursor-default">n8n</div>
               </div>
             </div>
 

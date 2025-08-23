@@ -47,28 +47,6 @@ export class MemStorage implements IStorage {
           "Admin dashboard with content and analytics control"
         ]
       },
-      // {
-      //   id: "2",
-      //   title: "Netflix Inspired Portfolio",
-      //   description: "Step into a portfolio experience designed like your favorite streaming platform. Browse projects seamlessly in categorized rows, hover for instant previews, and dive into detailed project trailers showing tech stacks, live demos, and GitHub links.",
-      //   image: "attached_assets/netflixinsp.jpeg",
-      //   video: "attached_assets/Netflixinsp_v.mov",
-      //   technologies: ["React.js", "Next.js", "Node.js & Express", "Postgresql", "Vibe Coding"],
-      //   category: "featured",
-      //   liveUrl: "https://netflixinspiredportfolio.onrender.com/",
-      //   githubUrl: "https://github.com/priiyajha/NetflixInspiredPortfolio.git",
-      //   featured: "true",
-      //   status: "live",
-      //   features: [
-      //     "Categorized Project Rows",
-      //     "Hover Previews: Get instant sneak peeks of each project on hover.",
-      //     "Project Trailers: Watch detailed mini-demos for each project with tech stack and live previews.",
-      //     "Interactive UI: Smooth animations and cinematic scrolling for a binge-worthy experience.",
-      //     "Responsive Design: Optimized for all devices with pixel-perfect layout and Netflix-inspired aesthetic.",
-      //     "Dynamic Content Loading: Fetch projects in real-time using React Query for seamless performance.",
-      //     "High Customizability: Easily add or update projects without breaking the layout."
-      //   ]
-      // },
 
       // Web Development
       {
@@ -191,7 +169,7 @@ export class MemStorage implements IStorage {
         description: "An experimental leap into Next.js’ new frontier, where AI, Firebase, and raw innovation collide to shape an evolving digital ecosystem.",
         image: "attached_assets/omnipleximg.jpeg",
         video: "attached_assets/omniplex_v.mp4",
-        technologies: ["Typescript", "CSS", "Javascript"],
+        technologies: ["Typescript", "CSS", "Next.js", "Firebase"],
         category: "genai",
         liveUrl: "",
         githubUrl: "https://github.com/priiyajha/omniplex-carbon.git",
