@@ -182,6 +182,25 @@ export class MemStorage implements IStorage {
           "Built with React, Redux, and Tailwind flair, Openpanel is where community, creativity, and raw experimentation collide."
         ]
       },
+      {
+        id: "10",
+        title: "AI Agent Assistant",
+        description: "A cutting-edge AI chat app built with Next.js 15, LangChain, and Claude 3.5 Sonnet. Featuring real-time streaming, intelligent tool orchestration, and sleek design, it turns every conversation into a next-gen experience.",
+        image: "attached_assets/aiaa.jpeg",
+        video: "attached_assets/aiaa.mov",
+        technologies: ["Typescript", "CSS", "Next.js", "Clerk", "Convex", "LangChain", "LangGraph", "Wxflows"],
+        category: "genai",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/AIAgentAssistant.git",
+        featured: "true",
+        status: "ongoing",
+        features: [
+            "Smart AI Conversations – Powered by Claude 3.5 Sonnet with real-time streaming.",
+            "Intelligent Tool Orchestration – LangChain + LangGraph for seamless tool use.",
+            "Next.js 15 Performance – Fast, modern, and optimized with React 19 + Tailwind.",
+            "Built-in Reliability – Clerk authentication & Convex real-time data storage.",
+        ]
+      },
       //learning projects
       {
         id: "7",

@@ -472,6 +472,8 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                               ? "Web-app"
                                               : project.title === "NextRip"
                                               ? "Web-app"
+                                                          : project.title === "AI Agent Assistant"
+                                                              ? "Web-app"
                                               : "Web Application"
                               }
                           </span>
@@ -492,7 +494,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                             ? "Problem Statement: Developers lack a unified platform to experiment, collaborate, and innovate in real time. Existing tools are fragmented, slow, and don’t support seamless multi-LLM interactions, plugin expansions, or interactive experimentation."
                                             : project.title === "NextRip"
                                             ? "Problem Statement: Building a functional e-commerce platform is challenging for both learners and enthusiasts. Integrating frontend, backend, and payment systems into a seamless, real-world application that handles live transactions is often complex and fragmented."
-                                            : "Complex processes now run seamlessly."
+                                                        : project.title === "AI Agent Assistant"
+                                                            ? "Problem Statement: Building AI chat applications is often complex and fragmented. Developers face challenges in, managing real-time conversations at scale, orchestrating multiple AI tools efficiently, handling prompt optimization and caching to reduce costs, providing a secure, seamless, and modern user experience."
+                                                        : "Complex processes now run seamlessly."
                             }
                           </h2>
 
@@ -513,7 +517,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                     ? "Proposed Solution: Openpanel is a dynamic web ecosystem built for developers to explore, experiment, and collaborate. Powered by OpenAI and built with Next.js, React, Redux, Tailwind, and Firebase, it offers real-time updates, multi-LLM interactions, plugin support, and an interactive playground-combining search, weather, stocks, and more into a single living platform for creativity and innovation."
                                                     : project.title === "NextRip"
                                                         ? "Proposed Solution: Checkout is a full-stack e-commerce demo built on Next.js with Stripe-powered payments. It offers a polished landing page guiding users through seamless transactions, automatically redirecting after each purchase. The project demonstrates the complete journey from localhost to production, teaching developers and users how to combine frontend finesse, backend logic, and secure payments to create a live, functional commerce application."
-                                                        : "Complex processes now run seamlessly."
+                                                        : project.title === "AI Agent Assistant"
+                                                            ?"Proposed Solution: This project delivers a next-generation AI chat platform powered by Next.js 15, LangChain, and Claude 3.5 Sonnet. It solves the above challenges through: real-time AI chat streaming with context-aware responses, intelligent tool orchestration using LangGraph for smooth multi-tool execution, prompt caching & memory management for cost-efficient performance, secure, modern, mobile-friendly UI with Clerk authentication, Convex storage, and Tailwind design"
+                                                                : "Complex processes now run seamlessly."
                             }
                               </p>
                             </div>
