@@ -57,7 +57,7 @@ export class MemStorage implements IStorage {
         video: "attached_assets/AI-Interview.mp4",
         technologies: ["Next.js", "Node.js & Express", "MongoDB", "Vapi", "Firebase"],
         category: "web",
-        liveUrl: "#",
+        liveUrl: "https://ai-interview-platform-p0ay8j523-priiyajhas-projects.vercel.app/",
         githubUrl: "https://github.com/priiyajha/AI-Interview-Platform.git",
         featured: "false",
         status: "coming-soon",
