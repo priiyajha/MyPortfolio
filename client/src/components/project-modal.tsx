@@ -469,11 +469,13 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                               : project.title === "Real Time Multi Object Detection"
                                               ? "Web-app"
                                               : project.title === "Omniplex"
-                                              ? "Web-app"
+                                              ? "SaaS App"
                                               : project.title === "NextRip"
                                               ? "Web-app"
                                                           : project.title === "AI Agent Assistant"
-                                                              ? "Web-app"
+                                                              ? "SaaS App"
+                                                              : project.title === "AI Chat with PDF"
+                                                                  ? "SaaS App"
                                               : "Web Application"
                               }
                           </span>
@@ -496,7 +498,10 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                             ? "Problem Statement: Building a functional e-commerce platform is challenging for both learners and enthusiasts. Integrating frontend, backend, and payment systems into a seamless, real-world application that handles live transactions is often complex and fragmented."
                                                         : project.title === "AI Agent Assistant"
                                                             ? "Problem Statement: Building AI chat applications is often complex and fragmented. Developers face challenges in, managing real-time conversations at scale, orchestrating multiple AI tools efficiently, handling prompt optimization and caching to reduce costs, providing a secure, seamless, and modern user experience."
-                                                        : "Complex processes now run seamlessly."
+                                                            : project.title === "AI Chat with PDF"
+                                                                ? "Problem Statement: Problem Statement\n" +
+                                                                "Manually searching for information in large PDFs is time-consuming and inefficient for professionals, students, and entrepreneurs. This passive process leads to wasted hours and missed critical details, making it difficult to find specific answers quickly."
+                                                            : "Complex processes now run seamlessly."
                             }
                           </h2>
 
@@ -519,7 +524,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                         ? "Proposed Solution: Checkout is a full-stack e-commerce demo built on Next.js with Stripe-powered payments. It offers a polished landing page guiding users through seamless transactions, automatically redirecting after each purchase. The project demonstrates the complete journey from localhost to production, teaching developers and users how to combine frontend finesse, backend logic, and secure payments to create a live, functional commerce application."
                                                         : project.title === "AI Agent Assistant"
                                                             ?"Proposed Solution: This project delivers a next-generation AI chat platform powered by Next.js 15, LangChain, and Claude 3.5 Sonnet. It solves the above challenges through: real-time AI chat streaming with context-aware responses, intelligent tool orchestration using LangGraph for smooth multi-tool execution, prompt caching & memory management for cost-efficient performance, secure, modern, mobile-friendly UI with Clerk authentication, Convex storage, and Tailwind design"
-                                                                : "Complex processes now run seamlessly."
+                                                            : project.title === "AI Agent Assistant"
+                                                                ?"Proposed Solution: An AI-powered SaaS app that turns PDFs into a conversational experience. Using a tech stack including Next.js for the frontend, Clerk for user authentication, and a robust backend with LangChain and Pinecone, users can upload documents and get instant, accurate answers to their questions via a chat interface. This will save significant time and transform how users interact with their documents."
+                                                            : "Complex processes now run seamlessly."
                             }
                               </p>
                             </div>
