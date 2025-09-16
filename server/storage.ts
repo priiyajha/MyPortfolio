@@ -201,6 +201,25 @@ export class MemStorage implements IStorage {
             "Built-in Reliability – Clerk authentication & Convex real-time data storage.",
         ]
       },
+      {
+        id: "10",
+        title: "AI Chat with PDF",
+        description: "In a world drowning in digital paperwork, one app is here to save the day. It’s not a search engine, and it’s not just a file viewer. This is a powerful AI companion that transforms your static PDFs into a dynamic, conversational experience.",
+        image: "attached_assets/ai-chat.jpeg",
+        video: "attached_assets/ai-chat_m.mov",
+        technologies: ["Next.js", "Clerk", "Typescript", "ShadcnUI", "LangChain", "PineCone"],
+        category: "genai",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/ai-chat-with-pdf.git",
+        featured: "true",
+        status: "ongoing",
+        features: [
+          "PDF to Chat Interface: Instantly transform static PDFs into a dynamic, conversational experience.",
+          "AI-Powered Answers: Get accurate and instant answers to your questions from any document's content.",
+          "Secure Authentication: User authentication and data security are handled seamlessly with Clerk.",
+          "Scalable Architecture: The app is built on a modern stack (Next.js, LangChain, Pinecone) designed for performance and scalability.",
+        ]
+      },
       //learning projects
       {
         id: "7",
