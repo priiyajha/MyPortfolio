@@ -202,7 +202,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "10",
+        id: "11",
         title: "AI Chat with PDF",
         description: "In a world drowning in digital paperwork, one app is here to save the day. It’s not a search engine, and it’s not just a file viewer. This is a powerful AI companion that transforms your static PDFs into a dynamic, conversational experience.",
         image: "attached_assets/ai-chat.jpeg",
