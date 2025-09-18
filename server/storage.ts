@@ -209,7 +209,7 @@ export class MemStorage implements IStorage {
         video: "attached_assets/ai-chat_m.mov",
         technologies: ["Next.js", "Clerk", "Typescript", "ShadcnUI", "LangChain", "PineCone"],
         category: "genai",
-        liveUrl: "",
+        liveUrl: " https://ai-chat-with-bhdgtcekw-priiyajhas-projects.vercel.app",
         githubUrl: "https://github.com/priiyajha/ai-chat-with-pdf.git",
         featured: "true",
         status: "ongoing",
