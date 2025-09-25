@@ -94,7 +94,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Full-Stack | Gen AI | Vibe Coding+Marketing
+            Full-Stack | Gen AI | AI Automation | Vibe Marketing
           </motion.h2>
 
           <motion.p
@@ -122,7 +122,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
             </Button>
 
             <Button
-                onClick={() => window.open("attached_assets/Resume_Priya_Jha_AI.pdf", "_blank")}
+                onClick={() => window.open("attached_assets/PriyaJha_AI_Resume.pdf", "_blank")}
               variant="secondary"
               className="bg-white/20 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-base sm:text-lg hover:bg-white/30 transition-all duration-200 flex items-center justify-center gap-2"
               size="lg"

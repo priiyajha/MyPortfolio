@@ -31,10 +31,10 @@ export class MemStorage implements IStorage {
         image: "/attached_assets/trip-planner.png",
         video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
         technologies: ["React.js", "Node.js & Express", "PostgreSQL"],
-        category: "featured",
+        category: "web",
         liveUrl: "https://trip-planner-nu-one.vercel.app/",
         githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
-        featured: "true",
+        featured: "false",
         status: "live",
         features: [
           "Destination discovery with category-based exploration",
@@ -117,29 +117,29 @@ export class MemStorage implements IStorage {
           "High Customizability: Easily add or update projects without breaking the layout."
         ]
       },
-      {
-        id: "3",
-        title: "Trip Planner",
-        description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
-        image: "/attached_assets/trip-planner.png",
-        video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
-        technologies: ["React & Next.js", "Node.js & Express", "PostgreSQL"],
-        category: "web",
-        liveUrl: "https://trip-planner-nu-one.vercel.app/",
-        githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
-        featured: "false",
-        status: "live",
-        features: [
-          "Destination discovery with category-based exploration",
-          "Personalized recommendations based on preferences",
-          "Real-time weather integration and forecasts",
-          "Comprehensive transport options comparison",
-          "Collaborative group itinerary planning",
-          "Interactive booking management system",
-          "Season-specific city exploration guides",
-          "Admin dashboard with content and analytics control"
-        ]
-      },
+      // {
+      //   id: "3",
+      //   title: "Trip Planner",
+      //   description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
+      //   image: "/attached_assets/trip-planner.png",
+      //   video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
+      //   technologies: ["React & Next.js", "Node.js & Express", "PostgreSQL"],
+      //   category: "web",
+      //   liveUrl: "https://trip-planner-nu-one.vercel.app/",
+      //   githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
+      //   featured: "false",
+      //   status: "live",
+      //   features: [
+      //     "Destination discovery with category-based exploration",
+      //     "Personalized recommendations based on preferences",
+      //     "Real-time weather integration and forecasts",
+      //     "Comprehensive transport options comparison",
+      //     "Collaborative group itinerary planning",
+      //     "Interactive booking management system",
+      //     "Season-specific city exploration guides",
+      //     "Admin dashboard with content and analytics control"
+      //   ]
+      // },
       //gen ai projects
       // {
       //   id: "7",
