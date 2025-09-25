@@ -24,33 +24,10 @@ export class MemStorage implements IStorage {
     // Initialize with sample portfolio data (only 2 real projects per category)
     const sampleProjects: Project[] = [
         //featured
-      {
-        id: "1",
-        title: "Trip Planner",
-        description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
-        image: "/attached_assets/trip-planner.png",
-        video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
-        technologies: ["React.js", "Node.js & Express", "PostgreSQL"],
-        category: "web",
-        liveUrl: "https://trip-planner-nu-one.vercel.app/",
-        githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
-        featured: "false",
-        status: "live",
-        features: [
-          "Destination discovery with category-based exploration",
-          "Personalized recommendations based on preferences",
-          "Real-time weather integration and forecasts",
-          "Comprehensive transport options comparison",
-          "Collaborative group itinerary planning",
-          "Interactive booking management system",
-          "Season-specific city exploration guides",
-          "Admin dashboard with content and analytics control"
-        ]
-      },
 
       // Web Development
       {
-        id: "6",
+        id: "1",
         title: "AI Interview Platform",
         description: "An intelligent interview platform that conducts automated technical and behavioral interviews using advanced AI. Features real-time code evaluation, sentiment analysis, and detailed candidate assessments with personalized feedback.",
         image: "attached_assets/aip.jpeg",
@@ -73,7 +50,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "5",
+        id: "2",
         title: "FarmFolio",
         description: "Farmfolio is an intelligent crop recommendation system that personalizes suggestions based on user inputs like geography, soil type, budget, area, and cultivation goals. Trained on curated datasets, it not only identifies the most suitable crops but also offers issue-specific fertilizer recommendations (e.g., for pests or soil fertility). The app integrates real-time weather and news updates through an interactive chatbot, enhanced with a personality agent to keep conversations engaging and a translator agent that uses NLP to detect and respond in the user's native language, even when typed phonetically in English. Built to unify diverse farming needs in one accessible platform.",
         image: "attached_assets/farmfolio.jpeg",
@@ -96,7 +73,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "4",
+        id: "3",
         title: "Netflix Inspired Portfolio",
         description: "Step into a portfolio experience designed like your favorite streaming platform. Browse projects seamlessly in categorized rows, hover for instant previews, and dive into detailed project trailers showing tech stacks, live demos, and GitHub links.",
         image: "attached_assets/netflixinsp.jpeg",
@@ -117,54 +94,32 @@ export class MemStorage implements IStorage {
           "High Customizability: Easily add or update projects without breaking the layout."
         ]
       },
-      // {
-      //   id: "3",
-      //   title: "Trip Planner",
-      //   description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
-      //   image: "/attached_assets/trip-planner.png",
-      //   video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
-      //   technologies: ["React & Next.js", "Node.js & Express", "PostgreSQL"],
-      //   category: "web",
-      //   liveUrl: "https://trip-planner-nu-one.vercel.app/",
-      //   githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
-      //   featured: "false",
-      //   status: "live",
-      //   features: [
-      //     "Destination discovery with category-based exploration",
-      //     "Personalized recommendations based on preferences",
-      //     "Real-time weather integration and forecasts",
-      //     "Comprehensive transport options comparison",
-      //     "Collaborative group itinerary planning",
-      //     "Interactive booking management system",
-      //     "Season-specific city exploration guides",
-      //     "Admin dashboard with content and analytics control"
-      //   ]
-      // },
-      //gen ai projects
-      // {
-      //   id: "7",
-      //   title: "Muti Channel Sales Agent",
-      //   description: "",
-      //   image: "",
-      //   video: "",
-      //   technologies: ["React.js", "Next.js", "Node.js & Express", "Postgresql", "Vibe Coding"],
-      //   category: "genai",
-      //   liveUrl: "#",
-      //   githubUrl: "",
-      //   featured: "false",
-      //   status: "ongoing",
-      //   features: [
-      //     // "Categorized Project Rows",
-      //     // "Hover Previews: Get instant sneak peeks of each project on hover.",
-      //     // "Project Trailers: Watch detailed mini-demos for each project with tech stack and live previews.",
-      //     // "Interactive UI: Smooth animations and cinematic scrolling for a binge-worthy experience.",
-      //     // "Responsive Design: Optimized for all devices with pixel-perfect layout and Netflix-inspired aesthetic.",
-      //     // "Dynamic Content Loading: Fetch projects in real-time using React Query for seamless performance.",
-      //     // "High Customizability: Easily add or update projects without breaking the layout."
-      //   ]
-      // },
       {
-        id: "8",
+        id: "4",
+        title: "Trip Planner",
+        description: "Trip Planner is a smart, collaborative travel planning platform that brings everything, destination discovery, personalized recommendations, real-time weather, transport options, and group itinerary planning, into one seamless web experience. With modern UI/UX and powerful backend integration, users can explore cities by category or season, manage bookings, and plan trips interactively, while admins maintain full control over content and insights through a dedicated dashboard.",
+        image: "/attached_assets/trip-planner.png",
+        video: "/attached_assets/20250731_1725_Seasons Through Travelers' Eyes_simple_compose_01k1g5c80efe0s652h0fdr7mjz_1753966935310.mp4",
+        technologies: ["React.js", "Node.js & Express", "PostgreSQL"],
+        category: "web",
+        liveUrl: "https://trip-planner-nu-one.vercel.app/",
+        githubUrl: "https://github.com/priiyajha/Your-Tour-Partner",
+        featured: "false",
+        status: "live",
+        features: [
+          "Destination discovery with category-based exploration",
+          "Personalized recommendations based on preferences",
+          "Real-time weather integration and forecasts",
+          "Comprehensive transport options comparison",
+          "Collaborative group itinerary planning",
+          "Interactive booking management system",
+          "Season-specific city exploration guides",
+          "Admin dashboard with content and analytics control"
+        ]
+      },
+      //gen ai projects
+      {
+        id: "5",
         title: "Omniplex",
         description: "An experimental leap into Next.js’ new frontier, where AI, Firebase, and raw innovation collide to shape an evolving digital ecosystem.",
         image: "attached_assets/omnipleximg.jpeg",
@@ -183,7 +138,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "10",
+        id: "6",
         title: "AI Agent Assistant",
         description: "A cutting-edge AI chat app built with Next.js 15, LangChain, and Claude 3.5 Sonnet. Featuring real-time streaming, intelligent tool orchestration, and sleek design, it turns every conversation into a next-gen experience.",
         image: "attached_assets/aiaa.jpeg",
@@ -202,10 +157,10 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "11",
+        id: "7",
         title: "AI Chat with PDF",
         description: "In a world drowning in digital paperwork, one app is here to save the day. It’s not a search engine, and it’s not just a file viewer. This is a powerful AI companion that transforms your static PDFs into a dynamic, conversational experience.",
-        image: "attached_assets/ai-chat.jpeg",
+        image: "attached_assets/chat_Pdf.jpeg",
         video: "attached_assets/ai-chat_m.mov",
         technologies: ["Next.js", "Clerk", "Typescript", "ShadcnUI", "LangChain", "PineCone"],
         category: "genai",
@@ -222,7 +177,7 @@ export class MemStorage implements IStorage {
       },
       //learning projects
       {
-        id: "7",
+        id: "8",
         title: "Real Time Multi Object Detection",
         description: "Turn your phone into a live AI lens, streaming, detecting, and sketching objects in real time, right in your browser.",
         image: "attached_assets/realtime.jpeg",

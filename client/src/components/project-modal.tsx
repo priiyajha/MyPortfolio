@@ -445,13 +445,13 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                {/*<span className="px-3 py-1 rounded-full border border-white text-white text-sm"/>*/}
                             <span className="px-3 py-1 rounded-full border border-white text-white text-sm">
                           {project.title === "FarmFolio"
-                              ? "May 2024"
+                              ? "2024"
                               : project.title === "Trip Planner"
-                                  ? "Jan 2025"
+                                  ? "2025"
                                   : project.title === "AI Interview Platform"
                                       ? "Ongoing"
                                       : project.title === "Netflix Inspired Portfolio"
-                                          ? "August 2025"
+                                          ? "2025"
                                           : "2025"}
                         </span>
                             </span>
@@ -464,7 +464,7 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                       : project.title === "AI Interview Platform"
                                           ? "Full-Stack"
                                           : project.title === "Netflix Inspired Portfolio"
-                                              ? "Full-Stack + Vibe Coding"
+                                              ? "Full-Stack"
 
                                               : project.title === "Real Time Multi Object Detection"
                                               ? "Web-app"
