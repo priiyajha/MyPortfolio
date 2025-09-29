@@ -167,7 +167,7 @@ export class MemStorage implements IStorage {
         liveUrl: "https://ai-chat-with-pdf-lovat.vercel.app/",
         githubUrl: "https://github.com/priiyajha/ai-chat-with-pdf.git",
         featured: "true",
-        status: "coming-soon",
+        status: "live",
         features: [
           "PDF to Chat Interface: Instantly transform static PDFs into a dynamic, conversational experience.",
           "AI-Powered Answers: Get accurate and instant answers to your questions from any document's content.",
@@ -215,6 +215,24 @@ export class MemStorage implements IStorage {
           "Built on Next.js, styled with Vercel’s precision, and armed with Stripe’s secure payments, this project isn’t just a tutorial, it’s a coming-of-age story for web developers learning to blend frontend flair with real-world commerce.",
           "From localhost to live payments — watch code turn into currency."
           ]
+      },
+      {
+        id: "10",
+        title: "AI Resume Analyzer",
+        description: "Stop throwing resumes into the void. This AI tool scores your application, provides instant optimization feedback, and guarantees you pass the gatekeepers.",
+        image: "attached_assets/resume-analyzer.jpeg",
+        video: "attached_assets/AI_Resume_Analyzer_Video_Generation.mp4",
+        technologies: ["React.js", "TailwindCSS", "Typescript", "Puter.js"],
+        category: "genai",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/ai-resume-analyzer.git",
+        featured: "false",
+        status: "coming-soon",
+        features: [
+          "Seamless Management: Securely upload and store all resumes in one place with easy, serverless authentication",
+          "AI Matching: Users input a job description and receive a quantifiable ATS score and custom feedback tailored to how well their resume matches the specific listing.",
+          "Optimization: Provides actionable insights to help job seekers quickly optimize their documents for maximum matching success."
+        ]
       },
 
     ];

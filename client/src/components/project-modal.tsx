@@ -452,6 +452,8 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                       ? "Ongoing"
                                       : project.title === "Netflix Inspired Portfolio"
                                           ? "2025"
+                                          : project.title === "AI Resume Analyzer"
+                                              ? "2025"
                                           : "2025"}
                         </span>
                             </span>
@@ -476,6 +478,8 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                               ? "SaaS App"
                                                               : project.title === "AI Chat with PDF"
                                                                   ? "SaaS App"
+                                                                  : project.title === "AI Resume Analyzer"
+                                                                      ? "SaaS App"
                                               : "Web Application"
                               }
                           </span>
@@ -501,7 +505,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                             : project.title === "AI Chat with PDF"
                                                                 ? "Problem Statement: Problem Statement\n" +
                                                                 "Manually searching for information in large PDFs is time-consuming and inefficient for professionals, students, and entrepreneurs. This passive process leads to wasted hours and missed critical details, making it difficult to find specific answers quickly."
-                                                            : "Complex processes now run seamlessly."
+                                                                : project.title === "AI Resume Analyzer"
+                                                                    ?"Problem Statement: The traditional method of assessing a resume's suitability for a specific job is inefficient, often leading to wasted time for both recruiters and applicants due to a lack of objective, personalized alignment metrics. Job seekers struggle to optimize their resumes for Applicant Tracking Systems (ATS) and specific job descriptions."
+                                                                    : "Complex processes now run seamlessly."
                             }
                           </h2>
 
@@ -526,7 +532,17 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                             ?"Proposed Solution: This project delivers a next-generation AI chat platform powered by Next.js 15, LangChain, and Claude 3.5 Sonnet. It solves the above challenges through: real-time AI chat streaming with context-aware responses, intelligent tool orchestration using LangGraph for smooth multi-tool execution, prompt caching & memory management for cost-efficient performance, secure, modern, mobile-friendly UI with Clerk authentication, Convex storage, and Tailwind design"
                                                             : project.title === "AI Chat with PDF"
                                                                 ?"Proposed Solution: An AI-powered SaaS app that turns PDFs into a conversational experience. Using a tech stack including Next.js for the frontend, Clerk for user authentication, and a robust backend with LangChain and Pinecone, users can upload documents and get instant, accurate answers to their questions via a chat interface. This will save significant time and transform how users interact with their documents."
-                                                            : "Complex processes now run seamlessly."
+                                                                : project.title === "AI Resume Analyzer"
+                                                                    ?"Proposed Solution: The AI Resume Analyzer is a premium, modern web application that solves this by providing an AI-driven, serverless platform for career management.\n" +
+                                                                    "\n" +
+                                                                    "The solution utilizes React, TypeScript, and Puter.js to deliver the following:\n" +
+                                                                    "\n" +
+                                                                    "Seamless Management: Securely upload and store all resumes in one place with easy, serverless authentication.\n" +
+                                                                    "\n" +
+                                                                    "AI Matching: Users input a job description and receive a quantifiable ATS score and custom feedback tailored to how well their resume matches the specific listing.\n" +
+                                                                    "\n" +
+                                                                    "Optimization: Provides actionable insights to help job seekers quickly optimize their documents for maximum matching success."
+                                                                : "Complex processes now run seamlessly."
                             }
                               </p>
                             </div>
