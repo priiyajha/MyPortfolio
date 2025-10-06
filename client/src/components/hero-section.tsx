@@ -122,7 +122,7 @@ export default function HeroSection({ profile }: HeroSectionProps) {
             </Button>
 
             <Button
-                onClick={() => window.open("attached_assets/PriyaJha_AI_Resume.pdf", "_blank")}
+                onClick={() => window.open("attached_assets/Priya_Jha_Resume.pdf", "_blank")}
               variant="secondary"
               className="bg-white/20 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-base sm:text-lg hover:bg-white/30 transition-all duration-200 flex items-center justify-center gap-2"
               size="lg"
