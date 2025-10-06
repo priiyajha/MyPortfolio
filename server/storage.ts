@@ -227,11 +227,29 @@ export class MemStorage implements IStorage {
         liveUrl: "",
         githubUrl: "https://github.com/priiyajha/ai-resume-analyzer.git",
         featured: "false",
-        status: "coming-soon",
+        status: "live",
         features: [
           "Seamless Management: Securely upload and store all resumes in one place with easy, serverless authentication",
           "AI Matching: Users input a job description and receive a quantifiable ATS score and custom feedback tailored to how well their resume matches the specific listing.",
           "Optimization: Provides actionable insights to help job seekers quickly optimize their documents for maximum matching success."
+        ]
+      },
+      {
+        id: "12",
+        title: "Student Feedback System",
+        description: "The grades are in, but the feedback is late: this system cuts through the bureaucracy to deliver real-time student critique and transparent analytics, forcing institutions to face the data and optimize the outcome of every course.",
+        image: "attached_assets/sfs.jpeg",
+        video: "attached_assets/sfs-mov.mp4",
+        technologies: ["Next.js", "TailwindCSS", "ShadcnUI", "Firebase"],
+        category: "web",
+        liveUrl: "",
+        githubUrl: "https://github.com/priiyajha/student-feedback-system.git",
+        featured: "false",
+        status: "live",
+        features: [
+          "Real-Time Analytics Dashboard: Instantly displays average course rating and visual distribution charts for immediate faculty insight.",
+          "Secure CRUD and Feedback API: Manages the course catalog and captures validated student ratings/comments via a dedicated POST endpoint.",
+          "Course Health List View: Shows all courses with their current average rating as a dynamic indicator for quick, at-a-glance performance tracking."
         ]
       },
 

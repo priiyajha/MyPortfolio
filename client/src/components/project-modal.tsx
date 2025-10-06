@@ -454,6 +454,8 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                           ? "2025"
                                           : project.title === "AI Resume Analyzer"
                                               ? "2025"
+                                              : project.title === "Student Feedback System"
+                                                  ? "2025"
                                           : "2025"}
                         </span>
                             </span>
@@ -480,6 +482,8 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                                   ? "SaaS App"
                                                                   : project.title === "AI Resume Analyzer"
                                                                       ? "SaaS App"
+                                                                      : project.title === "Student Feedback System"
+                                                                          ? "Web-app"
                                               : "Web Application"
                               }
                           </span>
@@ -507,6 +511,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                                 "Manually searching for information in large PDFs is time-consuming and inefficient for professionals, students, and entrepreneurs. This passive process leads to wasted hours and missed critical details, making it difficult to find specific answers quickly."
                                                                 : project.title === "AI Resume Analyzer"
                                                                     ?"Problem Statement: The traditional method of assessing a resume's suitability for a specific job is inefficient, often leading to wasted time for both recruiters and applicants due to a lack of objective, personalized alignment metrics. Job seekers struggle to optimize their resumes for Applicant Tracking Systems (ATS) and specific job descriptions."
+                                                                    : project.title === "Student Feedback System"
+                                                                        ? "Problem Statement: Educational institutions lack a unified, real-time portal to gather and synthesize comprehensive course feedback, hindering rapid quality improvement. Current manual or decentralized survey methods result in low response rates and delayed data analysis. This prevents timely identification of course strengths and weaknesses, making it difficult for faculty and administration to address student concerns and iteratively enhance the curriculum for better educational outcomes."
+
                                                                     : "Complex processes now run seamlessly."
                             }
                           </h2>
@@ -542,7 +549,9 @@ export default function NetflixModal({ projectId, onClose, onProjectSwitch }: Ne
                                                                     "AI Matching: Users input a job description and receive a quantifiable ATS score and custom feedback tailored to how well their resume matches the specific listing.\n" +
                                                                     "\n" +
                                                                     "Optimization: Provides actionable insights to help job seekers quickly optimize their documents for maximum matching success."
-                                                                : "Complex processes now run seamlessly."
+                                                                    : project.title === "Student Feedback System"
+                                                                        ?"Proposed Solution: Developed a full-stack Student Feedback System with an intuitive frontend for streamlined submissions (ratings/comments) and a robust backend (CRUD APIs). The system will instantly compute and expose aggregated, transparent analytics (average ratings, distribution charts) per course. This solution provides faculty with immediate, actionable data to track course health, optimizing decision-making and ensuring continuous quality control across all course offerings."
+                                                                    : "Complex processes now run seamlessly."
                             }
                               </p>
                             </div>
